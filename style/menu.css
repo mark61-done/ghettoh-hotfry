@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #d2d2fa;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2E3192;
+    transition: 0.3s ease;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: yellow;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#navbar .btn{
+    width: 80px;
+    height: 5vh;
+    border-style: none;
+    background-color: #2E3192;
+    color: yellow;
+    border-radius: 20px;
+    cursor: pointer;
+}
+/* menu */
+.menu-section {
+    background-color: white;
+    padding: 50px 0 100px;
+    width: 100%;
+}
+
+.menu-section .section-title{
+    text-align: center;
+    color: #2E3192;
+}
+
+.menu-section .menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-section .menu-list .menu-item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:space-between;
+    flex-direction: column;
+    width: calc(100% / 4 );
+}
+
+.menu-section .menu-list .menu-item .menu-image {
+    width: 700px;
+    height: 500px;
+    aspect-ratio: 1;
+    object-fit: contain;
+    border-radius: 40px;
+}
+
+.menu-section .menu-list .menu-item .text {
+    font-size: 20px;
+    align-items: center;
+
+}
+
+.menu-section .menu-list .menu-item .name {
+    margin: 12px 0;
+    font-size: 20px;
+}
+
+.menu-section .menu-list .menu-item .btn{
+    border-radius: 40px;
+    margin-top: 20px;
+    width: 80px;
+    height: 5vh;
+    border-style: none;
+    background-color: #2E3192;
+    color: yellow;
+    cursor: pointer;
+} 
+.panda{ 
+    margin-top: -140px;
+}
+.box{
+    margin-bottom: -50px;
+}
+.box2{
+    margin-top: -80px;
+}
+.me{
+    margin-bottom: -100px;
+}
